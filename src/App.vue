@@ -149,4 +149,82 @@ watch(weights, newWeights => {
     color: #888;
     font-weight: 400;
   }
+
+  .current {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 200px;
+
+    text-align: center;
+    background-color: white;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 5px solid hotpink;
+
+    margin: 0 auto 2rem;
+  }
+
+  .current span {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .current small {
+    color: #888;
+    font-style: italic;
+  }
+
+  form {
+    display: flex;
+    margin-bottom: 2rem;
+    border: 1px solid #aaa;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 200ms linear;
+  }
+
+  form:focus-within,
+  form:hover {
+    border-color: hotpink;
+    border-width: 2px;
+  }
+
+  form input[type="number"] {
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: white;
+
+    flex: 1 1 0%;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  form input[type="submit"] {
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: hotpink;
+
+    padding: 0.5rem 1rem;
+
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: 200ms linear;
+    border-left: 3px solid transparent;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: white;
+    color: hotpink;
+    border-left-color: hotpink;
+  }
 </style>
