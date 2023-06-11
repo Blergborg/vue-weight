@@ -123,5 +123,30 @@ watch(weights, newWeights => {
 </template>
 
 <style scoped>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 
+  body {
+    background-color: #eee;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    color: #888;
+    font-weight: 400;
+  }
 </style>
