@@ -100,11 +100,13 @@ watch(weights, newWeights => {
     </form>
 
     <!-- Info / Visualization -->
-    <div v-if="weights && weights.length > 0">
+    <div class="data-container" v-if="weights && weights.length > 0">
       <!-- Chart -->
-      <h2>Last 7 Days</h2>
-      <div class="canvas-box">
-        <canvas id="weight-chart" ref="weightChartElement"></canvas>
+      <div class="chart-container">
+        <h2>Last 7 Days</h2>
+        <div class="canvas-box">
+          <canvas id="weight-chart" ref="weightChartElement"></canvas>
+        </div>
       </div>
 
       <!-- History List -->
@@ -183,7 +185,7 @@ watch(weights, newWeights => {
   form {
     display: flex;
     max-width: 720px;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
     border: 1px solid #aaa;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -229,20 +231,25 @@ watch(weights, newWeights => {
     border-left-color: hotpink;
   }
 
-  .canvas-box {
+  .chart-container {
+    margin: 0 auto 2em;
     width: 100%;
     max-width: 720px;
+  }
+
+  .canvas-box {
+    justify-content: center;
     background-color: white;
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
   }
 
   .weight-history {
     max-width: 720px;
+    margin: 0 auto;
   }
-  
+
   .weight-history ul {
     list-style: none;
     padding: 0;
