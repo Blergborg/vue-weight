@@ -182,6 +182,7 @@ watch(weights, newWeights => {
 
   form {
     display: flex;
+    max-width: 720px;
     margin-bottom: 2rem;
     border: 1px solid #aaa;
     border-radius: 0.5rem;
@@ -227,4 +228,57 @@ watch(weights, newWeights => {
     color: hotpink;
     border-left-color: hotpink;
   }
+
+  .canvas-box {
+    width: 100%;
+    max-width: 720px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+
+  .weight-history {
+    max-width: 720px;
+  }
+  
+  .weight-history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .weight-history ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .weight-history ul li:nth-child(even) {
+    background-color: #dfdfdf;
+  }
+
+  .weight-history ul li::hover {
+    background-color: #f8f8f8;
+  }
+
+  .weight-history ul li:last-of-type {
+    border-bottom: none;
+  }
+
+  .weight-history ul li span {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-right: 1rem;
+  }
+
+  .weight-history ul li small {
+    color: #888;
+    font-style: italic;
+  }
+
 </style>
